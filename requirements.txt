@@ -1,19 +1,32 @@
-streamlit
+# Core
 fastapi
 uvicorn
+streamlit
 python-dotenv
+pydantic
 
+# LangChain + LangGraph
 langchain
-langgraph
-langchain-community
 langchain-core
 langchain-groq
+langgraph
 
-pydantic
+# Database
 mysql-connector-python
+sqlalchemy
 
+# Vector Store
 faiss-cpu
 sentence-transformers
 
-schedule
+# HTTP & APIs
+requests
+httpx
+twilio
+
+# Scheduling
+apscheduler
+
+# Utilities
 loguru
+python-multipart

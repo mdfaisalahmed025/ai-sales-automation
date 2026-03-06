@@ -1,0 +1,112 @@
+2026-03-06 16:25:23.641 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 16:25:23.768 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 16:25:39.035 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 16:29:51.246 | INFO     | __main__:build_index:44 - Embedding 9 products...
+2026-03-06 16:29:51.246 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-06 16:29:57.851 | INFO     | __main__:build_index:55 - ✅ FAISS index built with 9 products → ./vector_store/data/faiss_index
+2026-03-06 16:31:08.845 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 16:31:08.915 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 16:32:26.098 | ERROR    | agents.intent_agent:detect_intent:26 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 16:32:26.098 | INFO     | graph:intent_node:23 - Intent: general
+2026-03-06 16:32:43.751 | ERROR    | agents.intent_agent:detect_intent:26 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 16:32:43.751 | INFO     | graph:intent_node:23 - Intent: general
+2026-03-06 16:33:39.919 | ERROR    | agents.intent_agent:detect_intent:26 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 16:33:39.919 | INFO     | graph:intent_node:23 - Intent: general
+2026-03-06 16:36:13.623 | ERROR    | agents.intent_agent:detect_intent:26 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 16:36:13.624 | INFO     | graph:intent_node:23 - Intent: general
+2026-03-06 16:36:41.748 | ERROR    | agents.intent_agent:detect_intent:26 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 16:36:41.751 | INFO     | graph:intent_node:23 - Intent: general
+2026-03-06 16:36:55.313 | ERROR    | agents.intent_agent:detect_intent:26 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 16:36:55.313 | INFO     | graph:intent_node:23 - Intent: general
+2026-03-06 16:39:46.516 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 16:40:00.027 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 16:40:00.178 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 16:40:21.804 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 16:40:38.196 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 16:40:38.307 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 16:41:23.040 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 16:41:31.785 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 16:41:31.885 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 18:38:55.249 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 18:38:55.251 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:39:07.553 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 18:39:07.553 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:42:01.272 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 18:42:01.273 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:42:39.591 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 18:42:39.592 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:42:58.604 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 18:42:58.604 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:43:59.864 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 18:44:09.590 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 18:44:09.711 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 18:44:16.148 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-06 18:44:16.148 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:48:58.647 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 18:54:14.216 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 18:54:14.355 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-06 18:54:18.085 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-06 18:54:18.085 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 18:59:36.685 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-06 18:59:36.685 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 19:03:55.036 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-06 19:03:55.037 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-06 19:03:55.042 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-06 19:03:55.042 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-06 19:05:08.839 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-06 19:05:08.841 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-06 19:05:39.951 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-06 19:05:39.951 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-06 19:06:07.129 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:06:07.130 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:06:41.421 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:06:41.422 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:06:59.903 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:06:59.904 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:07:20.927 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:07:20.927 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:07:27.641 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:07:27.641 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:08:16.572 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:08:16.573 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:08:54.613 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-06 19:08:54.615 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-06 19:09:21.021 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:09:21.022 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:09:41.520 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-06 19:09:41.521 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 19:10:28.579 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-06 19:10:28.581 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-06 19:10:59.789 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:10:59.791 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:11:12.308 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-06 19:11:12.311 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-06 19:11:28.183 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:11:28.185 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:13:09.700 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:13:09.702 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:16:47.346 | INFO     | memory.customer_profile:get_or_create_customer:16 - New customer created: 0111868984364
+2026-03-06 19:16:47.661 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'followup'
+2026-03-06 19:16:47.661 | INFO     | graph:intent_node:22 - Intent detected: followup
+2026-03-06 19:17:41.182 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:17:41.183 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:18:10.104 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:18:10.105 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:20:34.490 | INFO     | memory.customer_profile:get_or_create_customer:16 - New customer created: +8801712345678
+2026-03-06 19:20:34.686 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:20:34.686 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:21:57.132 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-06 19:21:57.134 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-06 19:23:07.877 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-06 19:23:07.878 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-06 19:24:58.899 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:24:58.900 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:25:30.109 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-06 19:25:30.110 | INFO     | graph:intent_node:22 - Intent detected: recommendation
+2026-03-06 19:26:36.544 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-06 19:26:36.545 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-06 19:27:45.064 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:27:45.065 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:28:27.416 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-06 19:28:27.417 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-06 19:30:54.722 | INFO     | main:lifespan:19 - 🛑 Shutting down.

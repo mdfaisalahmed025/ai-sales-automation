@@ -1,34 +1,82 @@
-from database.db import get_db_connection
+from sqlalchemy import Column, Integer, String, Text, DECIMAL, Boolean, DateTime, Enum, ForeignKey
+from sqlalchemy.orm import declarative_base, relationship
+from datetime import datetime
+
+Base = declarative_base()
 
 
-def get_products():
+class Customer(Base):
+    __tablename__ = "customers"
+    id         = Column(Integer, primary_key=True, autoincrement=True)
+    name       = Column(String(255))
+    phone      = Column(String(50), unique=True)
+    email      = Column(String(255))
+    channel    = Column(Enum("whatsapp", "instagram", "web"), default="web")
+    created_at = Column(DateTime, default=datetime.utcnow)
 
-    conn = get_db_connection()
-    cursor = conn.cursor(dictionary=True)
-
-    cursor.execute("SELECT * FROM products")
-
-    products = cursor.fetchall()
-
-    cursor.close()
-    conn.close()
-
-    return products
+    orders        = relationship("Order", back_populates="customer")
+    conversations = relationship("Conversation", back_populates="customer")
+    leads         = relationship("Lead", back_populates="customer")
+    followups     = relationship("Followup", back_populates="customer")
 
 
-def create_order(customer_name, product_name, price):
+class Product(Base):
+    __tablename__ = "products"
+    id          = Column(Integer, primary_key=True, autoincrement=True)
+    name        = Column(String(255), nullable=False)
+    category    = Column(String(100))
+    description = Column(Text)
+    price       = Column(DECIMAL(10, 2), nullable=False)
+    stock       = Column(Integer, default=0)
+    min_price   = Column(DECIMAL(10, 2))
+    created_at  = Column(DateTime, default=datetime.utcnow)
 
-    conn = get_db_connection()
-    cursor = conn.cursor()
+    orders = relationship("Order", back_populates="product")
 
-    query = """
-    INSERT INTO orders (customer_name, product_name, price)
-    VALUES (%s,%s,%s)
-    """
 
-    cursor.execute(query, (customer_name, product_name, price))
+class Order(Base):
+    __tablename__ = "orders"
+    id          = Column(Integer, primary_key=True, autoincrement=True)
+    customer_id = Column(Integer, ForeignKey("customers.id"))
+    product_id  = Column(Integer, ForeignKey("products.id"))
+    quantity    = Column(Integer, default=1)
+    total_price = Column(DECIMAL(10, 2))
+    status      = Column(Enum("pending", "confirmed", "shipped", "delivered", "cancelled"), default="pending")
+    created_at  = Column(DateTime, default=datetime.utcnow)
 
-    conn.commit()
+    customer = relationship("Customer", back_populates="orders")
+    product  = relationship("Product", back_populates="orders")
 
-    cursor.close()
-    conn.close()
+
+class Lead(Base):
+    __tablename__ = "leads"
+    id          = Column(Integer, primary_key=True, autoincrement=True)
+    customer_id = Column(Integer, ForeignKey("customers.id"))
+    interest    = Column(Text)
+    status      = Column(Enum("new", "contacted", "converted", "lost"), default="new")
+    created_at  = Column(DateTime, default=datetime.utcnow)
+
+    customer = relationship("Customer", back_populates="leads")
+
+
+class Conversation(Base):
+    __tablename__ = "conversations"
+    id          = Column(Integer, primary_key=True, autoincrement=True)
+    customer_id = Column(Integer, ForeignKey("customers.id"))
+    role        = Column(Enum("user", "assistant"), nullable=False)
+    message     = Column(Text, nullable=False)
+    created_at  = Column(DateTime, default=datetime.utcnow)
+
+    customer = relationship("Customer", back_populates="conversations")
+
+
+class Followup(Base):
+    __tablename__ = "followups"
+    id           = Column(Integer, primary_key=True, autoincrement=True)
+    customer_id  = Column(Integer, ForeignKey("customers.id"))
+    message      = Column(Text)
+    scheduled_at = Column(DateTime)
+    sent         = Column(Boolean, default=False)
+    created_at   = Column(DateTime, default=datetime.utcnow)
+
+    customer = relationship("Customer", back_populates="followups")

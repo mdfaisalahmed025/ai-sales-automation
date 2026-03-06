@@ -1,40 +1,61 @@
+# vector_store/vector_build.py
+"""
+Run this script once to build the FAISS index from your MySQL products table.
+Usage: python -m vector_store.vector_build
+"""
+import os
+import json
 import faiss
 import numpy as np
-from vector_store.embeddings import create_embedding
-from database.models import get_products
+from database.db import SessionLocal
+from database.models import Product
+from vector_store.embeddings import embed_texts
+from config import VECTOR_DB_PATH
+from utils.logger import logger
 
 
-def build_vector_store():
+def build_index():
+    os.makedirs(os.path.dirname(VECTOR_DB_PATH), exist_ok=True)
 
-    print("Loading products...")
+    db = SessionLocal()
+    try:
+        products = db.query(Product).all()
+        if not products:
+            logger.warning("No products found in database. Seed products first.")
+            return
 
-    products = get_products()
+        texts = [
+            f"{p.name} {p.category} {p.description}"
+            for p in products
+        ]
+        metadata = [
+            {
+                "id":          p.id,
+                "name":        p.name,
+                "category":    p.category,
+                "description": p.description,
+                "price":       float(p.price),
+                "stock":       p.stock,
+                "min_price":   float(p.min_price) if p.min_price else None,
+            }
+            for p in products
+        ]
 
-    print("Products found:", len(products))
+        logger.info(f"Embedding {len(texts)} products...")
+        embeddings = embed_texts(texts)
+        embeddings = np.array(embeddings).astype("float32")
 
-    texts = [
-        f"{p['name']} {p['description']}"
-        for p in products
-    ]
+        index = faiss.IndexFlatL2(embeddings.shape[1])
+        index.add(embeddings)
 
-    print("Generating embeddings...")
+        faiss.write_index(index, VECTOR_DB_PATH + ".faiss")
+        with open(VECTOR_DB_PATH + "_meta.json", "w") as f:
+            json.dump(metadata, f)
 
-    embeddings = [create_embedding(t) for t in texts]
-
-    print("Embeddings created")
-
-    dim = len(embeddings[0])
-
-    index = faiss.IndexFlatL2(dim)
-
-    index.add(np.array(embeddings))
-
-    print("Writing FAISS index...")
-
-    faiss.write_index(index, "products.index")
-
-    print("Vector store created")
+        logger.info(f"✅ FAISS index built with {len(texts)} products → {VECTOR_DB_PATH}")
+    finally:
+        db.close()
 
 
 if __name__ == "__main__":
-    build_vector_store()
+    build_index()

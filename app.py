@@ -1,255 +1,124 @@
+# app.py
 import streamlit as st
 import requests
 
-# ─── Page Config ────────────────────────────────────────────────────────────
-st.set_page_config(
-    page_title="AI Sales Agent",
-    page_icon="🛍️",
-    layout="centered"
-)
+st.set_page_config(page_title="AI Sales Agent", page_icon="🛍️", layout="centered")
 
-# ─── Custom CSS ─────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap');
-
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-        background-color: #0e0e11;
-        color: #f0f0f0;
-    }
-
-    .main { background-color: #0e0e11; }
-
-    h1 {
-        font-family: 'Syne', sans-serif;
-        font-weight: 800;
-        font-size: 2.4rem;
-        background: linear-gradient(135deg, #e0c97f, #f5a623);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.2rem;
-    }
-
-    .subtitle {
-        color: #888;
-        font-size: 0.95rem;
-        margin-bottom: 2rem;
-        font-weight: 300;
-    }
-
-    .prompt-card {
-        background: #1a1a22;
-        border: 1px solid #2e2e3a;
-        border-radius: 12px;
-        padding: 14px 18px;
-        margin: 6px 0;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        font-size: 0.9rem;
-        color: #ccc;
-    }
-
-    .prompt-card:hover {
-        border-color: #e0c97f;
-        color: #fff;
-        background: #1f1f2e;
-    }
-
-    .section-label {
-        font-family: 'Syne', sans-serif;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: #e0c97f;
-        margin: 1.5rem 0 0.5rem 0;
-    }
-
-    .chat-bubble-user {
-        background: linear-gradient(135deg, #e0c97f22, #f5a62311);
-        border: 1px solid #e0c97f44;
-        border-radius: 16px 16px 4px 16px;
-        padding: 12px 16px;
-        margin: 8px 0;
-        font-size: 0.92rem;
-        color: #f0f0f0;
-        text-align: right;
-    }
-
-    .chat-bubble-ai {
-        background: #1a1a22;
-        border: 1px solid #2e2e3a;
-        border-radius: 16px 16px 16px 4px;
-        padding: 12px 16px;
-        margin: 8px 0;
-        font-size: 0.92rem;
-        color: #d0d0d0;
-        line-height: 1.6;
-    }
-
-    .stTextInput > div > div > input {
-        background-color: #1a1a22 !important;
-        border: 1px solid #2e2e3a !important;
-        border-radius: 10px !important;
-        color: #f0f0f0 !important;
-        font-family: 'Inter', sans-serif !important;
-        padding: 12px 16px !important;
-    }
-
-    .stTextInput > div > div > input:focus {
-        border-color: #e0c97f !important;
-        box-shadow: 0 0 0 2px #e0c97f22 !important;
-    }
-
-    .stButton > button {
-        background: linear-gradient(135deg, #e0c97f, #f5a623) !important;
-        color: #0e0e11 !important;
-        font-family: 'Syne', sans-serif !important;
-        font-weight: 700 !important;
-        border: none !important;
-        border-radius: 10px !important;
-        padding: 10px 28px !important;
-        font-size: 0.95rem !important;
-        letter-spacing: 0.04em !important;
-        width: 100% !important;
-        transition: opacity 0.2s !important;
-    }
-
-    .stButton > button:hover { opacity: 0.88 !important; }
-
-    .divider {
-        border: none;
-        border-top: 1px solid #2e2e3a;
-        margin: 1.5rem 0;
-    }
-
-    .badge {
-        display: inline-block;
-        background: #1a1a22;
-        border: 1px solid #2e2e3a;
-        border-radius: 20px;
-        padding: 3px 12px;
-        font-size: 0.75rem;
-        color: #888;
-        margin-right: 6px;
-    }
+    html, body, [class*="css"] { font-family: 'Inter', sans-serif; background: #0e0e11; color: #f0f0f0; }
+    .main { background: #0e0e11; }
+    h1 { font-family:'Syne',sans-serif; font-weight:800; font-size:2.2rem;
+         background:linear-gradient(135deg,#e0c97f,#f5a623);
+         -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .subtitle { color:#888; font-size:.9rem; margin-bottom:1.5rem; }
+    .chat-user { background:linear-gradient(135deg,#e0c97f22,#f5a62311);
+        border:1px solid #e0c97f44; border-radius:16px 16px 4px 16px;
+        padding:12px 16px; margin:6px 0; font-size:.9rem; text-align:right; }
+    .chat-ai { background:#1a1a22; border:1px solid #2e2e3a;
+        border-radius:16px 16px 16px 4px; padding:12px 16px;
+        margin:6px 0; font-size:.9rem; line-height:1.6; }
+    .intent-badge { display:inline-block; background:#e0c97f22; border:1px solid #e0c97f44;
+        border-radius:20px; padding:2px 10px; font-size:.72rem; color:#e0c97f; margin-top:4px; }
+    .section-label { font-family:'Syne',sans-serif; font-size:.72rem; font-weight:700;
+        letter-spacing:.12em; text-transform:uppercase; color:#e0c97f; margin:1.2rem 0 .4rem; }
+    .stTextInput>div>div>input { background:#1a1a22 !important; border:1px solid #2e2e3a !important;
+        border-radius:10px !important; color:#f0f0f0 !important; padding:12px 16px !important; }
+    .stTextInput>div>div>input:focus { border-color:#e0c97f !important; }
+    .stButton>button { background:linear-gradient(135deg,#e0c97f,#f5a623) !important;
+        color:#0e0e11 !important; font-family:'Syne',sans-serif !important; font-weight:700 !important;
+        border:none !important; border-radius:10px !important; width:100% !important; }
+    hr { border-top:1px solid #2e2e3a; margin:1.2rem 0; }
 </style>
 """, unsafe_allow_html=True)
 
-
-# ─── Header ─────────────────────────────────────────────────────────────────
+# ── Header ────────────────────────────────────────
 st.markdown("<h1>AI Sales Agent</h1>", unsafe_allow_html=True)
-st.markdown(
-    '<p class="subtitle">Ask about products, pricing, discounts, or negotiate a deal.</p>',
-    unsafe_allow_html=True
-)
-st.markdown(
-    '<span class="badge">🟢 Online</span>'
-    '<span class="badge">⚡ Groq LLaMA 3.3</span>'
-    '<span class="badge">🔀 LangGraph</span>',
-    unsafe_allow_html=True
-)
-st.markdown("<hr class='divider'>", unsafe_allow_html=True)
+st.markdown('<p class="subtitle">Powered by LangGraph · Groq LLaMA 3.3 · FAISS Vector Search</p>', unsafe_allow_html=True)
 
+# ── Sidebar ───────────────────────────────────────
+with st.sidebar:
+    st.markdown("### ⚙️ Settings")
+    customer_name  = st.text_input("Your Name",  value="Guest")
+    customer_phone = st.text_input("Phone (optional)", placeholder="+880...")
+    st.markdown("---")
+    st.markdown("### 📌 Quick Prompts")
+    quick_prompts = [
+        "What laptops do you have?",
+        "Tell me about iPhone 15 Pro",
+        "Can you give me a discount on MacBook?",
+        "I want to buy Samsung Galaxy S24",
+        "What headphones would you recommend?",
+        "What is your return policy?",
+    ]
+    selected_quick = None
+    for qp in quick_prompts:
+        if st.button(qp, key=f"qp_{qp}"):
+            selected_quick = qp
 
-# ─── Suggested Prompts ──────────────────────────────────────────────────────
-PROMPT_SUGGESTIONS = {
-    "🛒 Product Inquiry": [
-        "What laptops do you have under $1000?",
-        "Tell me about the features of the iPhone 15 Pro.",
-        "What's the difference between the Basic and Pro plan?",
-        "Do you have any wireless headphones in stock?",
-    ],
-    "💰 Pricing & Deals": [
-        "What is the price of the MacBook Air M3?",
-        "Are there any ongoing discounts or seasonal offers?",
-        "What's included in the premium package?",
-        "Is there a bundle deal if I buy multiple items?",
-    ],
-    "🤝 Negotiation": [
-        "Can you give me a better price on the Samsung Galaxy S24?",
-        "I'm a returning customer — can I get a loyalty discount?",
-        "If I buy 3 units, will you offer a bulk discount?",
-        "What's the best deal you can offer me today?",
-    ],
-    "📦 After Sales": [
-        "What is your return and refund policy?",
-        "How long does shipping take?",
-        "Do you offer warranty on electronics?",
-        "Can I exchange a product after purchase?",
-    ],
-}
-
-st.markdown('<p class="section-label">✦ Try a prompt</p>', unsafe_allow_html=True)
-
-selected_prompt = None
-for category, prompts in PROMPT_SUGGESTIONS.items():
-    with st.expander(category, expanded=False):
-        for prompt in prompts:
-            if st.button(prompt, key=f"btn_{prompt}"):
-                selected_prompt = prompt
-
-
-# ─── Chat History ───────────────────────────────────────────────────────────
+# ── Chat History ──────────────────────────────────
 if "history" not in st.session_state:
     st.session_state.history = []
 
 if st.session_state.history:
     st.markdown('<p class="section-label">✦ Conversation</p>', unsafe_allow_html=True)
     for turn in st.session_state.history:
-        st.markdown(
-            f'<div class="chat-bubble-user">🧑 {turn["user"]}</div>',
-            unsafe_allow_html=True
-        )
-        st.markdown(
-            f'<div class="chat-bubble-ai">🤖 {turn["ai"]}</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown(f'<div class="chat-user">🧑 {turn["user"]}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="chat-ai">🤖 {turn["ai"]}'
+                    f'<br><span class="intent-badge">intent: {turn.get("intent","—")}</span></div>',
+                    unsafe_allow_html=True)
 
-
-# ─── Input ──────────────────────────────────────────────────────────────────
-st.markdown("<hr class='divider'>", unsafe_allow_html=True)
+# ── Input ─────────────────────────────────────────
+st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown('<p class="section-label">✦ Your message</p>', unsafe_allow_html=True)
 
+# ✅ After
 user_input = st.text_input(
-    label="",
-    value=selected_prompt if selected_prompt else "",
-    placeholder="e.g. Can you give me a discount on the MacBook Pro?",
+    label="Your message",
+    value=selected_quick or "",
+    placeholder="e.g. Can you give me a deal on the MacBook Air?",
     label_visibility="collapsed"
 )
 
-col1, col2 = st.columns([3, 1])
+col1, col2 = st.columns([4, 1])
 with col1:
-    send = st.button("Send Message →")
+    send = st.button("Send →")
 with col2:
-    if st.button("🗑 Clear"):
+    if st.button("🗑"):
         st.session_state.history = []
         st.rerun()
 
-
-# ─── API Call ───────────────────────────────────────────────────────────────
+# ── API Call ──────────────────────────────────────
 if send and user_input.strip():
     with st.spinner("Agent is thinking..."):
         try:
             res = requests.post(
                 "http://localhost:8000/chat",
-                json={"message": user_input},
-                timeout=20
+                json={
+                    "message":     user_input,
+                    "name":        customer_name,
+                    "phone":       customer_phone or "guest",
+                    "customer_id": 0
+                },
+                timeout=30
             )
             if res.status_code == 200:
-                ai_response = res.json().get("response", "No response received.")
+                data       = res.json()
+                ai_reply   = data.get("response", "No response.")
+                intent     = data.get("intent", "—")
             else:
-                ai_response = f"⚠️ Error {res.status_code}: {res.json().get('detail', res.text)}"
+                ai_reply = f"⚠️ Error {res.status_code}: {res.json().get('detail','Unknown error')}"
+                intent   = "error"
         except requests.exceptions.ConnectionError:
-            ai_response = "❌ Cannot connect to backend. Make sure FastAPI is running on port 8000."
+            ai_reply = "❌ Cannot connect. Make sure FastAPI is running: `uvicorn main:app --reload`"
+            intent   = "error"
         except requests.exceptions.Timeout:
-            ai_response = "⏱️ Request timed out. The agent is taking too long to respond."
-        except Exception as e:
-            ai_response = f"❌ Unexpected error: {str(e)}"
+            ai_reply = "⏱️ Request timed out. Please try again."
+            intent   = "error"
 
-    st.session_state.history.append({"user": user_input, "ai": ai_response})
+    st.session_state.history.append({"user": user_input, "ai": ai_reply, "intent": intent})
     st.rerun()
 
 elif send and not user_input.strip():
-    st.warning("Please enter a message before sending.")
+    st.warning("Please enter a message.")

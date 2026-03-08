@@ -1832,3 +1832,23 @@
 2026-03-08 16:28:45.363 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
 2026-03-08 16:28:45.377 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
 2026-03-08 16:28:45.479 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-09 00:23:56.565 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-09 00:23:56.758 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-09 00:23:56.860 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-09 00:24:04.550 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-09 00:24:04.589 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-09 00:24:52.471 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-09 00:24:57.931 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-09 00:24:57.998 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-09 00:25:16.565 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-09 00:25:16.567 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-09 00:25:32.620 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-09 00:25:32.621 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-09 00:25:57.487 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-09 00:25:57.489 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-09 00:25:57.495 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-09 00:25:57.495 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-09 00:26:43.686 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-09 00:26:43.686 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-09 00:27:22.051 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-09 00:27:22.052 | INFO     | graph:intent_node:22 - Intent detected: recommendation

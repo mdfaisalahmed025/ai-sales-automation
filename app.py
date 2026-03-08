@@ -1,124 +1,177 @@
 # app.py
 import streamlit as st
 import requests
+import json
+from datetime import datetime
 
-st.set_page_config(page_title="AI Sales Agent", page_icon="🛍️", layout="centered")
+API_URL = "http://localhost:8001"
 
-st.markdown("""
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap');
-    html, body, [class*="css"] { font-family: 'Inter', sans-serif; background: #0e0e11; color: #f0f0f0; }
-    .main { background: #0e0e11; }
-    h1 { font-family:'Syne',sans-serif; font-weight:800; font-size:2.2rem;
-         background:linear-gradient(135deg,#e0c97f,#f5a623);
-         -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-    .subtitle { color:#888; font-size:.9rem; margin-bottom:1.5rem; }
-    .chat-user { background:linear-gradient(135deg,#e0c97f22,#f5a62311);
-        border:1px solid #e0c97f44; border-radius:16px 16px 4px 16px;
-        padding:12px 16px; margin:6px 0; font-size:.9rem; text-align:right; }
-    .chat-ai { background:#1a1a22; border:1px solid #2e2e3a;
-        border-radius:16px 16px 16px 4px; padding:12px 16px;
-        margin:6px 0; font-size:.9rem; line-height:1.6; }
-    .intent-badge { display:inline-block; background:#e0c97f22; border:1px solid #e0c97f44;
-        border-radius:20px; padding:2px 10px; font-size:.72rem; color:#e0c97f; margin-top:4px; }
-    .section-label { font-family:'Syne',sans-serif; font-size:.72rem; font-weight:700;
-        letter-spacing:.12em; text-transform:uppercase; color:#e0c97f; margin:1.2rem 0 .4rem; }
-    .stTextInput>div>div>input { background:#1a1a22 !important; border:1px solid #2e2e3a !important;
-        border-radius:10px !important; color:#f0f0f0 !important; padding:12px 16px !important; }
-    .stTextInput>div>div>input:focus { border-color:#e0c97f !important; }
-    .stButton>button { background:linear-gradient(135deg,#e0c97f,#f5a623) !important;
-        color:#0e0e11 !important; font-family:'Syne',sans-serif !important; font-weight:700 !important;
-        border:none !important; border-radius:10px !important; width:100% !important; }
-    hr { border-top:1px solid #2e2e3a; margin:1.2rem 0; }
-</style>
-""", unsafe_allow_html=True)
-
-# ── Header ────────────────────────────────────────
-st.markdown("<h1>AI Sales Agent</h1>", unsafe_allow_html=True)
-st.markdown('<p class="subtitle">Powered by LangGraph · Groq LLaMA 3.3 · FAISS Vector Search</p>', unsafe_allow_html=True)
+st.set_page_config(
+    page_title="AI Sales Agent",
+    page_icon="🤖",
+    layout="wide"
+)
 
 # ── Sidebar ───────────────────────────────────────
 with st.sidebar:
-    st.markdown("### ⚙️ Settings")
-    customer_name  = st.text_input("Your Name",  value="Guest")
-    customer_phone = st.text_input("Phone (optional)", placeholder="+880...")
-    st.markdown("---")
-    st.markdown("### 📌 Quick Prompts")
-    quick_prompts = [
-        "What laptops do you have?",
-        "Tell me about iPhone 15 Pro",
-        "Can you give me a discount on MacBook?",
-        "I want to buy Samsung Galaxy S24",
-        "What headphones would you recommend?",
-        "What is your return policy?",
-    ]
-    selected_quick = None
-    for qp in quick_prompts:
-        if st.button(qp, key=f"qp_{qp}"):
-            selected_quick = qp
+    st.title("🤖 AI Sales Agent")
+    st.divider()
 
-# ── Chat History ──────────────────────────────────
-if "history" not in st.session_state:
-    st.session_state.history = []
+    channel = st.radio(
+        "Channel",
+        ["💬 Direct Chat", "📱 Simulate WhatsApp", "📸 Simulate Instagram"]
+    )
 
-if st.session_state.history:
-    st.markdown('<p class="section-label">✦ Conversation</p>', unsafe_allow_html=True)
-    for turn in st.session_state.history:
-        st.markdown(f'<div class="chat-user">🧑 {turn["user"]}</div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="chat-ai">🤖 {turn["ai"]}'
-                    f'<br><span class="intent-badge">intent: {turn.get("intent","—")}</span></div>',
-                    unsafe_allow_html=True)
+    st.divider()
+    st.subheader("Customer Info")
+    customer_phone = st.text_input("Phone Number", value="+8801868984364")
+    customer_name  = st.text_input("Name", value="Test User")
 
-# ── Input ─────────────────────────────────────────
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown('<p class="section-label">✦ Your message</p>', unsafe_allow_html=True)
+    st.divider()
 
-# ✅ After
-user_input = st.text_input(
-    label="Your message",
-    value=selected_quick or "",
-    placeholder="e.g. Can you give me a deal on the MacBook Air?",
-    label_visibility="collapsed"
-)
+    # ── Health check ──────────────────────────────
+    try:
+        health = requests.get(f"{API_URL}/health", timeout=2).json()
+        st.success(f"✅ Server: {health['status']}")
+    except:
+        st.error("❌ Server offline — run uvicorn first")
 
-col1, col2 = st.columns([4, 1])
-with col1:
-    send = st.button("Send →")
-with col2:
-    if st.button("🗑"):
-        st.session_state.history = []
+    if st.button("🗑️ Clear Chat"):
+        st.session_state.messages = []
         st.rerun()
 
-# ── API Call ──────────────────────────────────────
-if send and user_input.strip():
-    with st.spinner("Agent is thinking..."):
-        try:
-            res = requests.post(
-                "http://localhost:8000/chat",
-                json={
-                    "message":     user_input,
-                    "name":        customer_name,
-                    "phone":       customer_phone or "guest",
-                    "customer_id": 0
-                },
-                timeout=30
-            )
-            if res.status_code == 200:
-                data       = res.json()
-                ai_reply   = data.get("response", "No response.")
-                intent     = data.get("intent", "—")
-            else:
-                ai_reply = f"⚠️ Error {res.status_code}: {res.json().get('detail','Unknown error')}"
-                intent   = "error"
-        except requests.exceptions.ConnectionError:
-            ai_reply = "❌ Cannot connect. Make sure FastAPI is running: `uvicorn main:app --reload`"
-            intent   = "error"
-        except requests.exceptions.Timeout:
-            ai_reply = "⏱️ Request timed out. Please try again."
-            intent   = "error"
+# ── Main chat area ────────────────────────────────
+st.title("AI Sales Agent Dashboard")
 
-    st.session_state.history.append({"user": user_input, "ai": ai_reply, "intent": intent})
-    st.rerun()
+# tabs
+tab1, tab2 = st.tabs(["💬 Chat", "📊 API Logs"])
 
-elif send and not user_input.strip():
-    st.warning("Please enter a message.")
+with tab1:
+    # Chat history
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+
+    # Display messages
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]):
+            st.write(msg["content"])
+            st.caption(msg.get("time", ""))
+
+    # Chat input
+    if prompt := st.chat_input("Type a message..."):
+
+        # Show user message
+        st.session_state.messages.append({
+            "role": "user",
+            "content": prompt,
+            "time": datetime.now().strftime("%H:%M:%S")
+        })
+        with st.chat_message("user"):
+            st.write(prompt)
+
+        # Call API based on channel
+        with st.chat_message("assistant"):
+            with st.spinner("AI is thinking..."):
+                try:
+                    if channel == "📱 Simulate WhatsApp":
+                        # Exact same request Twilio sends
+                        resp = requests.post(
+                            f"{API_URL}/webhook/whatsapp",
+                            data={
+                                "From": f"whatsapp:{customer_phone}",
+                                "To": "whatsapp:+14155238886",
+                                "Body": prompt,
+                                "ProfileName": customer_name
+                            },
+                            timeout=30
+                        )
+                        # Parse TwiML response
+                        import re
+                        match = re.search(r"<Message>(.*?)</Message>", resp.text, re.DOTALL)
+                        reply = match.group(1) if match else "No reply"
+
+                    elif channel == "📸 Simulate Instagram":
+                        resp = requests.post(
+                            f"{API_URL}/webhook/instagram",
+                            json={
+                                "entry": [{
+                                    "messaging": [{
+                                        "sender": {"id": customer_phone},
+                                        "message": {"text": prompt}
+                                    }]
+                                }]
+                            },
+                            timeout=30
+                        )
+                        reply = resp.json().get("reply", "✅ Processed — reply sent via Instagram DM")
+
+                    else:
+                        # Direct chat — fastest, no webhook simulation
+                        resp = requests.post(
+                            f"{API_URL}/chat",
+                            json={
+                                "message": prompt,
+                                "phone": customer_phone,
+                                "name": customer_name,
+                                "customer_id": 0
+                            },
+                            timeout=30
+                        )
+                        data  = resp.json()
+                        reply = data.get("response", "No response")
+
+                        # Show intent badge
+                        intent = data.get("intent", "")
+                        if intent:
+                            st.badge(f"Intent: {intent}")
+
+                except requests.exceptions.Timeout:
+                    reply = "⚠️ Request timed out — is the server running?"
+                except Exception as e:
+                    reply = f"❌ Error: {str(e)}"
+
+            st.write(reply)
+            st.session_state.messages.append({
+                "role": "assistant",
+                "content": reply,
+                "time": datetime.now().strftime("%H:%M:%S")
+            })
+
+with tab2:
+    st.subheader("📊 API Logs")
+    st.info("Monitor your FastAPI terminal for live logs")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        if st.button("🔍 Health Check"):
+            try:
+                r = requests.get(f"{API_URL}/health").json()
+                st.json(r)
+            except:
+                st.error("Server offline")
+
+    with col2:
+        if st.button("📱 Test WhatsApp"):
+            try:
+                r = requests.post(
+                    f"{API_URL}/webhook/whatsapp",
+                    data={"From": f"whatsapp:{customer_phone}", "Body": "test message"}
+                )
+                st.code(r.text, language="xml")
+            except Exception as e:
+                st.error(str(e))
+
+    with col3:
+        if st.button("📸 Test Instagram"):
+            try:
+                r = requests.get(
+                    f"{API_URL}/webhook/instagram",
+                    params={
+                        "hub.mode": "subscribe",
+                        "hub.verify_token": "my_secret_verify_token",
+                        "hub.challenge": "123456"
+                    }
+                )
+                st.success(f"Response: {r.text}")
+            except Exception as e:
+                st.error(str(e))

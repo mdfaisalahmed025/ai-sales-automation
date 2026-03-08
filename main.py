@@ -3,6 +3,7 @@ import traceback
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from contextlib import asynccontextmanager
+from api.webhook_router import router 
 
 from graph import graph
 from database.db import test_connection
@@ -24,6 +25,7 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan
 )
+app.include_router(router)
 
 
 # ── Schemas ───────────────────────────────────────

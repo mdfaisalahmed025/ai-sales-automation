@@ -110,3 +110,1725 @@
 2026-03-06 19:28:27.416 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
 2026-03-06 19:28:27.417 | INFO     | graph:intent_node:22 - Intent detected: negotiation
 2026-03-06 19:30:54.722 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-06 19:41:04.966 | INFO     | main:lifespan:16 - 🚀 Starting AI Sales Agent API...
+2026-03-06 19:41:05.096 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-07 11:13:20.564 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-07 11:13:20.566 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-07 11:13:37.340 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-07 11:13:37.342 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-07 11:13:37.376 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-07 11:13:37.379 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-08 12:06:32.332 | INFO     | main:lifespan:19 - 🛑 Shutting down.
+2026-03-08 12:40:56.934 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 12:40:56.936 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 12:45:49.728 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 12:45:49.879 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 12:46:16.133 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-08 12:46:16.134 | INFO     | graph:intent_node:22 - Intent detected: negotiation
+2026-03-08 12:46:16.138 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-08 12:46:16.139 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-08 12:46:34.386 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: Hi, I want to buy a product
+2026-03-08 12:46:34.422 | INFO     | memory.customer_profile:get_or_create_customer:16 - New customer created: +8801868984364
+2026-03-08 12:46:34.596 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 12:46:34.597 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 12:46:36.016 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-08 12:48:57.228 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 14:59:37.176 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 14:59:37.285 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 14:59:52.300 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: Hi, I want to buy a product
+2026-03-08 14:59:53.084 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 14:59:53.084 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 14:59:53.846 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-08 15:00:25.942 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi, I want to buy a product
+2026-03-08 15:00:26.107 | INFO     | memory.customer_profile:get_or_create_customer:16 - New customer created: +8801868984363
+2026-03-08 15:00:26.391 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 15:00:26.392 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 15:00:27.693 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-08 15:03:05.849 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi, I want to buy a product
+2026-03-08 15:03:06.156 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 15:03:06.156 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 15:03:07.372 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-08 15:04:58.700 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:03.837 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:03.930 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:06.460 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:10.379 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:10.397 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:10.501 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:14.546 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:14.558 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:14.659 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:18.712 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:18.776 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:18.878 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:23.268 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:23.323 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:27.367 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:31.936 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:31.952 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:32.054 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:36.220 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:36.238 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:36.340 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:40.272 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:40.285 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:40.387 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:44.320 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:44.332 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:44.433 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:48.405 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:48.420 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:48.521 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:52.575 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:52.590 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:52.692 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:05:56.708 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:05:56.721 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:05:56.823 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:00.827 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:00.843 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:00.945 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:04.865 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:04.881 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:10.442 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:14.359 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:14.374 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:14.475 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:18.081 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:18.092 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:18.193 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:21.546 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:21.559 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:21.660 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:25.035 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:25.046 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:25.147 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:28.539 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:28.552 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:28.654 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:31.837 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:31.848 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:31.949 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:34.974 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:34.984 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:35.085 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:38.552 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:38.563 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:40.081 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:43.151 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:43.161 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:43.262 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:46.315 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:46.325 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:46.427 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:49.537 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:49.547 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:49.648 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:52.721 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:52.731 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:52.832 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:55.819 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:55.830 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:06:55.932 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:06:59.088 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:06:59.102 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:03.052 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:07.836 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:07.937 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:08.039 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:12.433 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:12.476 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:12.577 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:17.403 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:17.461 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:21.101 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:25.653 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:25.670 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:26.684 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:30.787 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:30.799 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:30.900 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:34.922 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:34.936 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:35.037 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:38.959 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:38.973 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:41.908 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:45.769 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:45.780 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:07:45.882 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:07:49.762 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:07:49.778 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:08:28.405 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:08:32.523 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:08:32.536 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:10:10.694 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:26:32.889 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:26:32.980 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:26:34.802 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:26:38.951 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:26:38.965 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:26:39.066 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:26:43.021 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:26:43.032 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:26:43.134 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:26:47.505 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:26:47.518 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:26:47.620 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:26:51.924 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:26:51.958 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:26:52.060 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:26:56.892 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:26:56.923 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:26:57.025 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:01.120 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:01.132 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:01.234 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:05.808 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:05.939 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:06.041 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:10.501 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:10.517 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:10.618 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:14.458 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:14.474 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:14.575 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:18.671 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:18.684 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:18.785 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:22.826 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:22.839 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:22.941 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:26.814 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:26.825 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:26.926 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:31.117 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:31.154 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:31.255 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:35.319 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:35.331 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:35.434 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:39.369 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:39.384 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:39.485 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:43.989 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:44.033 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:44.134 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:27:48.398 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:27:48.445 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:27:57.260 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:01.666 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:01.683 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:03.099 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:07.101 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:07.119 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:07.220 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:11.176 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:11.187 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:11.289 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:15.614 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:15.630 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:15.731 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:20.189 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:20.199 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:20.301 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:24.265 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:24.275 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:24.377 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:28.247 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:28.259 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:28.360 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:32.191 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:32.206 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:32.306 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:36.250 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:36.259 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:36.361 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:39.757 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:39.771 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:39.873 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:42.952 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:42.962 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:43.063 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:46.262 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:46.273 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:46.374 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:49.500 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:49.511 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:49.612 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:53.234 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:53.273 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:28:53.374 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:28:57.470 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:28:57.488 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:14.473 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:18.812 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:18.823 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:18.924 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:22.785 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:22.796 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:22.897 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:26.761 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:26.775 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:26.876 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:30.695 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:30.709 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:30.810 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:34.415 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:34.426 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:34.731 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:38.353 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:38.365 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:38.466 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:41.763 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:41.773 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:41.875 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:45.051 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:45.061 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:45.163 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:48.230 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:48.245 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:48.346 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:51.433 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:51.443 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:29:51.544 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:29:54.644 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:29:54.654 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:30:06.990 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:30:11.171 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:30:11.191 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:30:11.292 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:30:14.723 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:30:14.736 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:30:59.621 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:04.051 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:04.065 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:04.166 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:07.695 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:07.704 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:07.805 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:10.969 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:10.979 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:11.086 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:14.192 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:14.203 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:18.851 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:22.110 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:22.122 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:22.223 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:25.353 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:25.362 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:25.464 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:28.521 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:28.534 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:28.636 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:31.709 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:31.719 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:33.136 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:36.310 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:36.320 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:36.421 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:39.484 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:39.495 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:39.596 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:42.731 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:42.742 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:42.843 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:45.985 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:45.997 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:48.626 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:51.819 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:51.838 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:51.940 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:55.137 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:55.150 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:31:55.252 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:31:58.435 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:31:58.471 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:02.112 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:05.179 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:05.190 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:05.291 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:08.419 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:08.430 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:08.531 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:11.649 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:11.659 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:11.761 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:14.846 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:14.859 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:14.960 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:18.285 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:18.296 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:18.397 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:21.472 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:21.483 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:21.584 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:24.792 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:24.803 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:32:24.904 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:32:27.954 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:32:27.964 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:19.225 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:24.346 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:24.438 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:24.541 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:28.505 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:28.517 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:28.619 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:32.360 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:32.369 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:39.552 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:43.736 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:43.749 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:44.456 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:48.513 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:48.529 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:48.631 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:52.315 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:52.328 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:34:55.462 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:34:59.511 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:34:59.522 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:35:43.492 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:35:47.782 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:35:47.799 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:35:58.522 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:02.851 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:02.867 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:02.969 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:06.917 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:06.932 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:07.034 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:11.072 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:11.086 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:16.955 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:20.810 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:20.825 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:20.927 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:23.993 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:24.003 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:24.104 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:27.250 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:27.260 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:27.361 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:30.620 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:30.634 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:30.735 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:33.742 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:33.757 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:33.858 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:36.965 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:36.977 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:39.001 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:42.331 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:42.344 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:42.446 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:45.462 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:45.477 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:45.578 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:48.783 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:48.797 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:50.821 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:53.987 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:54.002 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:36:54.103 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:36:57.105 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:36:57.119 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:37:36.240 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:37:40.868 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:37:40.882 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:37:40.983 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:37:44.404 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:37:44.420 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:37:44.521 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:37:47.494 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:37:47.508 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:38:11.692 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi, I want to buy a product
+2026-03-08 15:38:12.397 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 15:38:12.397 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 15:38:13.814 | INFO     | api.whatsapp_api:send_whatsapp_message:16 - WhatsApp sent to +8801868984363: SID=SM6e6435d474038f0e13bca12e5053f050
+2026-03-08 15:38:39.187 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:38:44.402 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:38:44.475 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:38:44.578 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:38:48.610 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:38:48.622 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:38:48.723 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:38:52.983 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:38:52.997 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:38:53.098 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:38:57.351 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:38:57.362 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:08.892 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:13.367 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:13.443 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:28.611 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:33.807 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:33.896 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:33.998 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:38.149 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:38.163 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:38.265 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:42.389 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:42.402 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:42.504 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:46.379 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:46.394 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:46.495 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:50.225 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:50.237 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:50.339 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:53.712 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:53.731 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:53.832 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:39:56.965 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:39:56.978 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:39:56.979 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi, I want to buy a product
+2026-03-08 15:39:57.380 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 15:39:57.380 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 15:39:58.822 | INFO     | api.whatsapp_api:send_whatsapp_message:16 - WhatsApp sent to +8801868984363: SID=SMc7b8a3095b271127d824319d944c6ee8
+2026-03-08 15:40:03.169 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:40:06.530 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:40:06.547 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:40:06.648 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:40:09.651 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:40:09.663 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:40:09.764 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:40:13.014 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:40:13.025 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:40:13.547 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:40:16.879 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:40:16.897 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:40:39.144 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:40:44.769 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:40:44.844 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:40:58.195 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:41:02.646 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:41:02.661 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:41:39.039 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:41:43.748 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:41:43.782 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:41:43.884 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:41:48.111 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:41:48.160 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:04.646 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:09.906 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:09.992 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:10.095 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:14.911 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:14.956 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:15.058 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:19.071 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:19.086 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:19.188 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:23.065 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:23.082 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:23.184 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:27.110 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:27.125 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:34.002 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:37.874 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:37.889 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:37.991 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:41.564 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:41.579 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:41.680 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:44.778 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:44.794 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:44.896 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:48.129 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:48.142 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:48.243 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:51.246 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:51.260 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:51.361 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:42:54.316 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:42:54.326 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:42:57.561 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:43:00.854 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:43:00.868 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:43:00.969 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:43:03.941 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:43:03.951 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:43:04.052 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:43:07.197 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:43:07.212 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:43:36.012 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:43:40.429 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:43:40.444 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:43:52.678 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:43:57.162 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:43:57.178 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:44:00.822 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:44:05.783 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:44:05.874 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:44:34.782 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:44:40.066 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:44:40.152 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:44:45.406 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:44:49.470 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:44:49.481 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:01.412 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:05.795 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:05.807 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:06.313 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:10.171 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:10.180 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:10.282 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:14.282 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:14.294 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:14.395 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:18.632 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:18.665 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:18.868 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:23.000 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:23.013 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:29.885 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:34.277 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:34.342 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:34.445 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:39.003 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:39.044 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:45:39.146 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:45:43.501 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:45:43.542 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:46:23.099 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:46:29.267 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:46:29.351 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:21.702 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:47:26.680 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:47:26.761 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:34.752 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:47:38.788 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:47:38.802 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:38.904 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:47:42.759 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:47:42.776 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:46.922 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:47:50.707 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:47:50.723 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:50.825 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:47:53.968 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:47:53.981 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:54.083 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:47:57.333 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:47:57.344 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:47:58.761 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:48:01.944 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:48:01.959 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:48:02.061 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:48:05.163 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:48:05.176 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:48:05.278 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:48:08.582 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:48:08.596 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:48:24.266 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:48:28.936 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:48:28.963 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:49:28.858 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:49:33.943 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:49:34.045 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:49:35.586 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:49:40.688 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:49:40.779 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:49:40.881 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:49:45.117 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:49:45.151 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:49:45.252 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:49:49.654 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:49:49.666 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:49:49.767 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:49:54.734 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:49:54.775 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:49:54.877 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:49:59.382 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:49:59.397 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:50:19.301 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:50:24.078 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:50:24.096 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:51:37.881 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:51:43.218 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:51:43.283 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:51:43.385 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:51:47.598 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:51:47.614 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:51:47.716 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:51:52.617 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:51:52.656 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:03.166 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:08.059 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:08.103 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:09.820 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:13.860 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:13.875 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:13.977 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:18.131 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:18.147 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:18.248 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:23.567 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:23.591 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:23.692 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:28.288 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:28.327 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:28.428 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:33.080 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:33.120 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:34.640 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:39.008 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:39.041 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:39.852 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:44.582 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:44.616 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:44.717 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:49.720 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:49.760 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:49.861 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:53.917 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:53.929 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:54.030 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:52:58.979 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:52:59.026 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:52:59.129 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:03.695 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:03.732 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:03.834 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:08.018 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:08.043 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:08.144 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:12.905 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:12.949 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:16.387 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:21.429 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:21.472 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:22.182 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:26.896 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:26.910 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:27.011 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:32.269 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:32.314 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:32.416 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:36.406 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:36.422 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:37.027 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:43.086 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:43.118 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:43.220 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:47.183 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:47.196 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:53:47.298 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:53:51.159 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:53:51.170 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:54:36.130 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: Hi
+2026-03-08 15:54:36.971 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 15:54:36.971 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 15:54:37.595 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Account AC03bc033ecd4959a9440f26af5d33f596 exceeded the 5 daily messages limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/63038[0m
+
+
+2026-03-08 15:54:46.322 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: Hello
+2026-03-08 15:54:46.523 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 15:54:46.524 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 15:54:46.932 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Account AC03bc033ecd4959a9440f26af5d33f596 exceeded the 5 daily messages limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/63038[0m
+
+
+2026-03-08 15:55:26.048 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:55:31.195 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:55:31.275 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:55:39.366 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:55:44.256 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:55:44.274 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:55:44.376 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:55:48.287 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:55:48.299 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:56:37.311 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:56:42.310 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:56:42.400 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:56:42.503 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:56:46.895 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:56:46.907 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:56:47.008 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:56:51.700 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:56:51.723 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:56:51.825 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:56:55.627 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:56:55.642 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:56:55.743 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:56:59.766 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:56:59.782 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:57:01.504 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:57:05.327 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:57:05.342 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:57:13.842 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:57:17.875 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:57:17.892 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:57:17.993 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:57:21.553 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:57:21.566 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:57:21.667 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:57:24.752 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:57:24.768 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:57:38.719 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:57:43.030 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:57:43.046 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:57:57.624 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:02.242 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:02.258 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:02.359 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:06.944 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:06.980 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:07.081 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:12.169 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:12.226 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:12.327 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:16.933 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:16.967 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:17.069 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:21.946 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:21.981 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:26.936 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:31.546 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:31.581 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:31.682 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:35.593 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:35.604 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:58:50.875 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:58:55.257 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:58:55.268 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:06.689 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:10.840 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:10.858 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:10.959 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:14.788 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:14.799 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:14.901 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:18.928 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:18.941 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:19.042 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:23.362 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:23.384 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:23.485 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:27.730 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:27.774 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:27.875 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:31.916 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:31.928 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:32.030 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:35.901 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:35.923 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:36.025 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:41.290 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:41.330 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:42.748 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:47.009 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:47.041 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:47.142 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:51.709 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:51.743 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 15:59:51.844 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 15:59:56.655 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 15:59:56.702 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:00:20.147 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:00:24.501 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:00:24.514 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:00:24.615 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:00:28.608 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:00:28.628 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:00:28.730 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:00:32.871 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:00:32.894 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:00:40.068 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:00:44.261 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:00:44.276 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:01:11.563 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:01:15.926 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:01:15.944 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:01:24.633 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:01:29.050 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:01:29.066 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:01:29.167 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:01:33.130 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:01:33.144 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:01:33.246 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:01:37.387 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:01:37.417 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:01:50.348 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:01:54.594 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:01:54.606 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:01:54.707 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:01:58.274 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:01:58.289 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:03.238 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:07.091 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:07.106 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:07.207 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:10.338 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:10.348 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:10.450 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:13.913 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:13.928 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:25.548 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:30.120 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:30.135 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:30.236 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:34.199 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:34.217 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:34.319 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:38.155 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:38.179 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:38.281 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:41.469 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:41.480 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:02:42.594 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:02:45.920 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:02:45.932 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:03:03.928 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:03:10.850 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:03:10.978 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:03:37.097 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 16:03:37.097 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 16:03:44.292 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:03:49.067 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:03:49.125 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:03:49.227 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:03:52.731 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:03:52.741 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:03:52.842 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:03:56.169 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:03:56.181 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:03:56.524 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 16:03:56.525 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 16:03:59.291 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:02.643 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:02.667 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:10.852 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:14.562 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:14.599 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:14.701 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:17.769 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:17.784 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:17.885 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:21.146 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:21.159 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:23.282 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:26.465 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:26.479 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:36.992 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:40.214 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:40.230 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:40.331 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:43.362 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:43.376 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:43.478 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:46.604 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:46.613 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:50.354 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:53.527 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:53.537 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:04:53.638 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:04:56.815 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:04:56.829 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:07.339 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:11.332 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:11.348 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:11.449 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:12.949 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:12.964 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:13.066 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:14.679 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:14.689 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:16.355 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:16.405 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:38.633 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:38.635 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:43.790 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:43.790 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:43.805 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:43.805 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:43.906 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:43.907 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:47.501 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:47.501 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:47.511 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:47.511 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:47.613 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:47.613 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:51.161 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:51.161 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:05:51.175 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:51.175 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:05:59.763 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:05:59.765 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:03.618 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:03.618 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:03.632 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:03.632 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:03.734 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:03.734 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:07.249 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:07.252 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:07.267 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:07.269 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:07.370 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:07.372 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:10.988 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:10.988 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:11.001 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:11.002 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:12.921 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:12.924 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:16.707 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:16.707 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:16.723 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:16.723 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:16.825 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:16.825 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:20.491 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:20.491 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:20.502 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:20.502 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:20.604 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:20.604 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:24.083 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:24.083 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:24.094 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:24.094 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:25.913 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:26.015 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:29.364 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:29.384 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:29.402 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:29.414 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:29.486 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:32.866 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:32.885 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:36.240 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 16:06:36.240 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 16:06:39.053 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:39.094 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:43.772 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:43.772 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:43.792 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:43.792 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:43.894 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:43.894 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:47.349 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:47.349 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:47.368 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:47.368 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:47.849 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 16:06:47.850 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 16:06:53.721 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:53.836 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:58.460 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:58.460 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:06:58.560 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:58.560 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:06:58.663 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:06:58.663 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:02.160 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:02.160 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:02.177 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:02.177 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:02.279 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:05.631 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:05.650 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:05.652 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: hello
+2026-03-08 16:07:06.023 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 16:07:06.024 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 16:07:07.309 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Account AC03bc033ecd4959a9440f26af5d33f596 exceeded the 5 daily messages limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/63038[0m
+
+
+2026-03-08 16:07:08.145 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:08.525 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:12.267 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:12.290 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:12.304 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:12.305 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:12.405 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:16.030 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:16.052 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:23.317 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:23.338 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:28.301 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:28.301 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:28.317 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:28.319 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:28.419 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:28.420 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:32.396 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:32.408 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:32.420 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:32.428 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:32.523 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:32.530 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:36.282 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:36.282 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:36.295 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:36.295 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:36.397 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:36.397 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:07:40.344 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:40.344 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:07:40.361 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:07:40.364 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:08:50.173 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:08:50.375 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:08:55.657 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:08:55.657 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:08:55.747 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:08:55.747 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:08:55.849 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:08:55.850 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:08:59.770 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:08:59.770 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:08:59.820 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:08:59.820 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:08:59.921 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:08:59.921 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:03.481 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:03.481 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:03.495 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:03.495 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:06.333 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: hi
+2026-03-08 16:09:06.879 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-08 16:09:06.879 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-08 16:09:07.827 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Account AC03bc033ecd4959a9440f26af5d33f596 exceeded the 5 daily messages limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/63038[0m
+
+
+2026-03-08 16:09:11.973 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:11.990 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:16.480 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:16.480 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:16.517 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:16.517 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:16.619 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:16.619 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:20.364 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:20.364 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:20.383 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:20.383 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:20.484 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:20.484 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:24.292 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:24.292 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:24.319 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:24.319 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:24.421 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:24.421 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:28.774 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:28.775 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:28.787 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:28.787 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:28.889 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:28.889 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:32.949 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:32.949 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:32.996 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:32.996 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:33.097 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:33.097 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:36.614 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:36.614 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:36.629 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:36.630 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:36.731 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:36.731 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:40.191 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:40.191 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:40.203 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:40.203 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:40.205 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: I want to buy a product
+2026-03-08 16:09:40.583 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-08 16:09:40.583 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-08 16:09:41.013 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:41.954 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Account AC03bc033ecd4959a9440f26af5d33f596 exceeded the 5 daily messages limit[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/63038[0m
+
+
+2026-03-08 16:09:42.056 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:44.485 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:44.501 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:44.603 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:45.438 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:45.453 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:45.554 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:48.010 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:48.030 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:48.132 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:48.793 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:48.806 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:48.908 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:09:51.661 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:51.677 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:09:52.444 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:09:52.460 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:10:24.909 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:10:24.995 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:10:30.096 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:10:30.096 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:10:30.171 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:10:30.171 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:10:31.082 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:10:31.082 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:10:34.687 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:10:34.695 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:10:34.704 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:10:34.708 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:06.330 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:06.332 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:11.288 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:11.288 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:11.319 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:11.319 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:11.420 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:11.420 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:15.164 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:15.164 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:15.186 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:15.187 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:15.288 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:15.288 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:18.855 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:18.866 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:18.892 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:18.892 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:18.992 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:18.993 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:22.823 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:22.823 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:22.838 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:22.838 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:22.939 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:22.939 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:26.517 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:26.518 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:26.533 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:26.533 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:48.062 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:48.362 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:53.489 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:53.489 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:53.556 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:53.557 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:11:53.658 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:11:57.960 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:11:57.971 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:11.438 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:11.705 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:16.367 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:16.367 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:16.451 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:16.451 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:16.552 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:20.382 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:20.397 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:25.046 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:25.349 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:31.083 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:31.083 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:31.120 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:31.120 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:31.223 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:34.851 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:34.868 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:40.525 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:40.619 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:12:45.961 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:45.961 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:12:46.065 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:12:46.065 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:22.452 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:22.760 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:28.483 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:28.483 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:28.577 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:28.577 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:28.679 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:30.396 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:32.741 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:32.756 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:32.858 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:33.982 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:33.999 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:34.100 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:36.248 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:36.260 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:36.362 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:37.389 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:37.402 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:37.503 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:40.069 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:40.083 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:41.024 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:41.035 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:47.158 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:47.201 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:51.168 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:51.168 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:51.184 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:51.184 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:51.286 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:51.286 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:54.939 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:54.939 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:54.966 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:54.967 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:55.068 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:55.069 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:59.016 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:59.016 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:13:59.062 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:59.062 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:13:59.164 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:13:59.164 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:02.853 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:02.853 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:02.874 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:02.874 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:02.975 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:02.975 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:06.463 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:06.463 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:06.480 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:06.482 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:06.581 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:06.584 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:10.460 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:10.460 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:10.492 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:10.492 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:11.299 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:11.300 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:15.154 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:15.154 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:15.175 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:15.176 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:15.277 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:15.277 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:19.014 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:19.017 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:19.032 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:19.032 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:19.134 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:19.134 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:22.794 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:22.794 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:22.807 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:22.807 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:23.421 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:23.723 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:26.677 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:26.692 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:26.793 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:26.933 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:26.945 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:27.047 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:30.555 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:30.572 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:30.690 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:30.703 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:40.915 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:40.979 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:14:45.744 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:45.745 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:14:45.760 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:14:45.761 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:29.610 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:29.609 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:35.088 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:35.088 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:35.164 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:35.164 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:35.266 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:35.266 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:39.807 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:39.807 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:39.844 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:39.846 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:39.946 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:39.947 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:44.409 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:44.415 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:44.431 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:44.431 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:44.533 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:44.533 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:48.240 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:48.240 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:48.252 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:48.252 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:53.912 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:53.912 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:57.647 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:57.647 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:15:57.666 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:57.667 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:15:57.768 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:15:57.768 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:01.363 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:01.374 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:01.390 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:01.395 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:03.119 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:03.120 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:07.012 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:07.012 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:07.033 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:07.033 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:07.134 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:07.135 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:10.566 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:10.566 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:10.584 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:10.584 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:10.686 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:10.686 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:14.450 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:14.450 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:14.461 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:14.463 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:14.563 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:14.563 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:18.166 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:18.166 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:18.183 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:18.184 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:18.285 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:18.285 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:21.858 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:21.871 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:21.880 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:21.892 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:21.973 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:21.993 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:25.805 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:25.805 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:25.818 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:25.818 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:36.734 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:36.740 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:41.850 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:41.850 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:41.910 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:41.910 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:42.012 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:42.012 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:45.500 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:45.500 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:45.513 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:45.513 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:45.615 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:45.615 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:49.082 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:49.092 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:16:49.097 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:49.104 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:16:56.783 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:16:56.884 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:00.585 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:00.585 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:00.602 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:00.602 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:00.704 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:00.704 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:04.410 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:04.410 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:04.422 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:04.422 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:04.524 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:04.524 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:08.146 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:08.146 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:08.161 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:08.161 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:08.262 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:08.262 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:12.082 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:12.082 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:12.100 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:12.100 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:28.569 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:28.573 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:33.574 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:33.574 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:33.585 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:33.585 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:33.686 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:33.686 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:37.153 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:37.153 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:37.166 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:37.166 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:48.691 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:48.698 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:53.356 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:53.356 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:53.373 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:53.373 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:53.475 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:53.475 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:57.031 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:57.031 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:17:57.045 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:57.045 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:17:57.146 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:17:57.147 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:00.945 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:00.945 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:00.963 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:00.963 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:01.065 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:01.065 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:04.696 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:04.697 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:04.712 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:04.713 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:04.813 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:04.814 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:08.461 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:08.477 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:08.478 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:08.495 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:08.579 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:08.597 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:12.417 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:12.417 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:12.441 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:12.441 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:12.643 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:12.845 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:16.587 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:16.587 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:16.602 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:16.602 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:16.704 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:17.412 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:20.520 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:20.538 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:20.639 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:21.187 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:21.201 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:21.303 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:23.847 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:23.860 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:23.962 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:18:24.493 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:24.503 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:18:27.379 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:18:27.390 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:19:17.273 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:20:07.545 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:20:12.597 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:20:12.700 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:20:29.387 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:20:33.989 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:20:34.002 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:14.402 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:21.017 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:21.106 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:21.209 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:25.167 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:25.179 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:25.280 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:29.410 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:29.429 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:29.531 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:33.663 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:33.675 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:34.384 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:38.513 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:38.525 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:38.627 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:42.342 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:42.355 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:42.457 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:46.129 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:46.161 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:46.261 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:50.059 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:50.070 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:50.172 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:53.294 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:53.305 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:53.406 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:26:56.588 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:26:56.600 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:26:56.701 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:00.232 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:00.245 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:00.346 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:04.179 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:04.189 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:04.291 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:08.128 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:08.141 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:08.242 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:12.073 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:12.091 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:12.193 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:16.232 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:16.281 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:16.382 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:20.428 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:20.441 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:20.542 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:24.402 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:24.413 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:24.514 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:28.253 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:28.265 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:28.367 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:32.309 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:32.355 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:32.456 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:36.273 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:36.285 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:36.389 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:40.190 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:40.202 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:40.304 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:44.129 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:44.149 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:44.251 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:48.122 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:48.134 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:50.361 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:54.335 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:54.351 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:54.452 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:27:59.699 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:27:59.725 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:27:59.827 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:09.283 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:09.318 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:09.420 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:13.369 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:13.383 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:16.422 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:20.640 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:20.653 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:20.754 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:24.752 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:24.763 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:24.865 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:28.955 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:28.972 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:29.073 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:33.184 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:33.197 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:33.300 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:37.221 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:37.233 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:37.335 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:41.426 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:41.440 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:41.541 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-08 16:28:45.363 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-08 16:28:45.377 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-08 16:28:45.479 | INFO     | main:lifespan:20 - 🛑 Shutting down.

@@ -12,9 +12,13 @@ router = APIRouter()
 
 # ── WhatsApp Webhook (Twilio) ─────────────────────
 
+# webhook_router.py — fix the whatsapp_webhook function
+import asyncio
+from functools import partial
+
 @router.post("/webhook/whatsapp")
 async def whatsapp_webhook(request: Request):
-    form = await request.form()
+    form        = await request.form()
     from_number = str(form.get("From", "")).replace("whatsapp:", "")
     body        = str(form.get("Body", "")).strip()
 
@@ -24,20 +28,21 @@ async def whatsapp_webhook(request: Request):
     logger.info(f"WhatsApp from {from_number}: {body}")
 
     customer_id = get_or_create_customer(from_number, channel="whatsapp")
-    state  = {"message": body, "customer_id": customer_id}
-    result = graph.invoke(state)
+    state       = {"message": body, "customer_id": customer_id}
+
+    # ✅ Run blocking graph.invoke in thread so FastAPI doesn't timeout
+    loop   = asyncio.get_event_loop()
+    result = await loop.run_in_executor(None, partial(graph.invoke, state))
+
     reply  = result.get("response", "Sorry, I couldn't process that.")
 
     save_message(customer_id, "user",      body)
     save_message(customer_id, "assistant", reply)
-
     send_whatsapp_message(from_number, reply)
 
-    # Twilio expects TwiML
     twiml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <Response><Message>{reply}</Message></Response>"""
     return Response(content=twiml, media_type="text/xml")
-
 
 # ── Instagram Webhook ─────────────────────────────
 

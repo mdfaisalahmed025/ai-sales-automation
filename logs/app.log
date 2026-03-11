@@ -1956,3 +1956,398 @@
 2026-03-10 23:46:34.662 | INFO     | graph:intent_node:22 - Intent detected: recommendation
 2026-03-10 23:47:02.444 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
 2026-03-10 23:47:02.447 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-11 14:13:33.465 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: hi
+2026-03-11 14:13:34.125 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 14:13:34.126 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-11 14:13:35.349 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-11 15:20:50.114 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi, I want to buy a product
+2026-03-11 15:20:51.179 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 15:20:51.179 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-11 15:20:52.217 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-11 15:21:22.908 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi
+2026-03-11 15:21:23.398 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 15:21:23.398 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-11 15:21:24.292 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-11 15:23:17.881 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'followup'
+2026-03-11 15:23:17.882 | INFO     | graph:intent_node:22 - Intent detected: followup
+2026-03-11 15:29:55.670 | INFO     | main:lifespan:21 - 🛑 Shutting down.
+2026-03-11 15:31:17.105 | INFO     | main:lifespan:18 - 🚀 Starting AI Sales Agent API...
+2026-03-11 15:31:17.200 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 15:32:55.369 | INFO     | main:lifespan:21 - 🛑 Shutting down.
+2026-03-11 15:33:01.409 | INFO     | main:lifespan:18 - 🚀 Starting AI Sales Agent API...
+2026-03-11 15:33:01.559 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 15:33:01.660 | INFO     | main:lifespan:21 - 🛑 Shutting down.
+2026-03-11 15:33:55.211 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 15:33:55.252 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 15:34:00.516 | INFO     | automation.followup_scheduler:run_followups:13 - ⏰ Running scheduled follow-ups...
+2026-03-11 15:48:38.305 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 15:48:57.676 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 15:48:57.783 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 15:49:47.892 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 15:50:16.078 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 15:50:16.191 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 15:50:16.293 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:04:38.189 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:04:38.297 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:08:26.545 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:08:32.106 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:08:32.203 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:08:44.422 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:08:48.996 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:08:49.020 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:09:44.831 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:09:44.832 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:13:42.985 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:13:42.986 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:13:49.450 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 16:13:49.451 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 16:13:51.498 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 16:13:51.499 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 16:14:15.514 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-11 16:14:15.515 | INFO     | graph:intent_node:29 - Intent detected: pricing
+2026-03-11 16:14:22.695 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'negotiation'
+2026-03-11 16:14:22.696 | INFO     | graph:intent_node:29 - Intent detected: negotiation
+2026-03-11 16:14:34.381 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-11 16:14:34.381 | INFO     | graph:intent_node:29 - Intent detected: recommendation
+2026-03-11 16:14:49.714 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'followup'
+2026-03-11 16:14:49.714 | INFO     | graph:intent_node:29 - Intent detected: followup
+2026-03-11 16:15:02.190 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 16:15:02.190 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 16:15:03.010 | ERROR    | services.order_service:create_order:32 - Order creation failed: (mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'customer_id' in 'field list'
+[SQL: INSERT INTO orders (customer_id, product_id, quantity, total_price, status, created_at) VALUES (%(customer_id)s, %(product_id)s, %(quantity)s, %(total_price)s, %(status)s, %(created_at)s)]
+[parameters: {'customer_id': 3, 'product_id': 7, 'quantity': 1, 'total_price': 1299.0, 'status': 'pending', 'created_at': datetime.datetime(2026, 3, 11, 10, 15, 3, 4910)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-11 16:15:03.010 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 16:20:27.080 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:23:05.508 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:23:05.619 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:23:05.721 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:23:10.343 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:23:10.376 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:23:22.999 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:23:22.999 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:24:35.035 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:27:23.321 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:27:23.407 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:27:47.218 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 16:27:47.218 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 16:27:49.298 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 16:27:49.298 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 16:27:54.768 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 3, 'role': 'user', 'message': 'show me the b MacBook ', 'created_at': datetime.datetime(2026, 3, 11, 10, 27, 54, 642613)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:27:54.770 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 3, 'role': 'assistant', 'message': 'We have two MacBook models available: the MacBook Pro, which is currently out of stock and priced at $2200, and the MacBook Air M3, which is in stock ... (16 characters truncated) ... vailable for $1299. The MacBook Air M3 features a 13-inch display and is powered by the M3 chip. Would you like to take a look at the MacBook Air M3?', 'created_at': datetime.datetime(2026, 3, 11, 10, 27, 54, 769221)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:29:28.306 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:33:33.748 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:33:33.842 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:33:57.044 | INFO     | memory.customer_profile:get_or_create_customer:16 - New customer created: +8801868984364
+2026-03-11 16:33:57.603 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:33:57.603 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:33:57.608 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'ai_sales_agent.conversations' doesn't exist
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'user', 'message': 'hi', 'created_at': datetime.datetime(2026, 3, 11, 10, 33, 57, 605506)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-11 16:33:57.611 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'ai_sales_agent.conversations' doesn't exist
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'assistant', 'message': "Hi! I'm your AI sales assistant. I can help you with:\n• Product information & specs\n• Pricing & deals\n• Price negotiation\n• Product recommendations\n• Placing & paying for orders\n\nWhat can I help you with today?", 'created_at': datetime.datetime(2026, 3, 11, 10, 33, 57, 610613)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-11 16:35:23.374 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:35:23.375 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:35:23.406 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'user', 'message': 'hi', 'created_at': datetime.datetime(2026, 3, 11, 10, 35, 23, 387853)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:35:23.408 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'assistant', 'message': "Hi! I'm your AI sales assistant. I can help you with:\n• Product information & specs\n• Pricing & deals\n• Price negotiation\n• Product recommendations\n• Placing & paying for orders\n\nWhat can I help you with today?", 'created_at': datetime.datetime(2026, 3, 11, 10, 35, 23, 406834)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:35:38.493 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:35:38.494 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:35:38.513 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'user', 'message': 'hi', 'created_at': datetime.datetime(2026, 3, 11, 10, 35, 38, 506443)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:35:38.517 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'assistant', 'message': "Hi! I'm your AI sales assistant. I can help you with:\n• Product information & specs\n• Pricing & deals\n• Price negotiation\n• Product recommendations\n• Placing & paying for orders\n\nWhat can I help you with today?", 'created_at': datetime.datetime(2026, 3, 11, 10, 35, 38, 513814)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:36:24.270 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:36:24.272 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:36:24.287 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'user', 'message': 'hi', 'created_at': datetime.datetime(2026, 3, 11, 10, 36, 24, 274100)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:36:24.289 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'assistant', 'message': "Hi! I'm your AI sales assistant. I can help you with:\n• Product information & specs\n• Pricing & deals\n• Price negotiation\n• Product recommendations\n• Placing & paying for orders\n\nWhat can I help you with today?", 'created_at': datetime.datetime(2026, 3, 11, 10, 36, 24, 287660)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:36:34.500 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:36:34.500 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:36:34.505 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'user', 'message': 'hi', 'created_at': datetime.datetime(2026, 3, 11, 10, 36, 34, 502179)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:36:34.507 | ERROR    | memory.conversation_memory:save_message:14 - Failed to save message: (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`ai_sales_agent`.`conversations`, CONSTRAINT `conversations_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`))
+[SQL: INSERT INTO conversations (customer_id, `role`, message, created_at) VALUES (%(customer_id)s, %(role)s, %(message)s, %(created_at)s)]
+[parameters: {'customer_id': 1, 'role': 'assistant', 'message': "Hi! I'm your AI sales assistant. I can help you with:\n• Product information & specs\n• Pricing & deals\n• Price negotiation\n• Product recommendations\n• Placing & paying for orders\n\nWhat can I help you with today?", 'created_at': datetime.datetime(2026, 3, 11, 10, 36, 34, 506348)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-11 16:37:22.748 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:37:42.316 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:37:42.434 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:37:53.474 | INFO     | memory.customer_profile:get_or_create_customer:16 - New customer created: +8801868984364
+2026-03-11 16:37:53.899 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:37:53.899 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:38:55.226 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 16:38:55.226 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 16:38:57.660 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 16:38:57.660 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 16:41:37.226 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:41:42.713 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:41:42.789 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 16:41:50.041 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:41:50.042 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:42:00.012 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 16:42:00.012 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 16:42:00.015 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 16:42:00.015 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 16:42:05.232 | INFO     | services.order_service:create_order:29 - Order #1 created for customer 1
+2026-03-11 16:42:05.233 | ERROR    | agents.order_agent:order_agent:108 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 16:42:05.234 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 16:42:29.718 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 16:42:29.719 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 16:42:55.706 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:42:55.706 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:42:57.518 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 16:42:57.518 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 16:43:03.896 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 16:43:25.658 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 16:43:25.718 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 21:40:53.868 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 21:40:53.869 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 21:42:20.633 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 21:42:20.633 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 21:42:22.913 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 21:42:22.913 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 21:46:57.759 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 21:47:26.774 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 21:47:26.879 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 21:48:38.399 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 21:49:04.258 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 21:49:04.348 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 21:50:04.474 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 21:50:04.474 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 21:50:08.712 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 21:50:08.712 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 21:50:16.322 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 21:50:16.322 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 21:50:30.381 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 21:50:36.235 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 21:50:36.335 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 21:52:27.039 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 21:52:54.645 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 21:52:54.756 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 21:52:54.858 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 21:53:01.099 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 21:53:01.236 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 21:53:01.567 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 21:53:01.567 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 21:53:10.805 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-11 21:53:10.806 | INFO     | graph:intent_node:29 - Intent detected: recommendation
+2026-03-11 21:53:12.357 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 21:53:12.357 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 21:53:33.185 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 21:53:33.186 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 21:53:42.752 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-11 21:53:42.753 | INFO     | graph:intent_node:29 - Intent detected: pricing
+2026-03-11 21:55:48.734 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 21:55:48.734 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 21:55:49.261 | INFO     | services.order_service:create_order:29 - Order #2 created for customer 1
+2026-03-11 21:55:49.262 | ERROR    | agents.order_agent:order_agent:108 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 21:55:49.262 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 21:56:10.364 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'followup'
+2026-03-11 21:56:10.365 | INFO     | graph:intent_node:29 - Intent detected: followup
+2026-03-11 21:56:35.575 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 21:56:35.576 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 21:56:36.009 | INFO     | services.order_service:create_order:29 - Order #3 created for customer 1
+2026-03-11 21:56:36.011 | ERROR    | agents.order_agent:order_agent:108 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 21:56:36.011 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 22:02:48.671 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984364: test message
+2026-03-11 22:02:48.940 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 22:02:48.941 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 22:02:49.990 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-11 22:05:36.051 | INFO     | automation.followup_scheduler:run_followups:13 - ⏰ Running scheduled follow-ups...
+2026-03-11 22:06:03.952 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 22:06:03.958 | INFO     | services.order_service:cancel_order:122 - Order #3 cancelled — stock restored for product 5
+2026-03-11 22:10:27.990 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 22:10:51.364 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 22:10:51.473 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 22:32:30.719 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 22:32:30.721 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 22:32:33.049 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 22:32:33.049 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 22:32:38.390 | INFO     | services.order_service:create_order:29 - Order #4 created for customer 1
+2026-03-11 22:32:38.393 | ERROR    | agents.order_agent:order_agent:108 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 22:32:38.393 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 22:33:02.932 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 22:33:02.933 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 22:33:16.172 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 22:33:16.173 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 22:33:16.678 | INFO     | services.order_service:create_order:29 - Order #5 created for customer 1
+2026-03-11 22:33:16.680 | ERROR    | agents.order_agent:order_agent:108 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 22:33:16.683 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 22:34:00.441 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 22:34:25.445 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 22:34:25.539 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 22:35:23.765 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 22:35:23.766 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 22:35:25.922 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 22:35:25.922 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 22:35:31.478 | INFO     | services.order_service:create_order:29 - Order #6 created for customer 1
+2026-03-11 22:35:31.479 | ERROR    | agents.order_agent:order_agent:108 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 22:35:31.481 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 22:43:06.108 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 22:46:40.072 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 22:46:40.233 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 22:49:25.219 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 22:49:25.306 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 22:49:25.407 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 22:49:31.778 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 22:49:31.884 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 22:49:49.496 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 22:49:49.497 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 22:50:09.337 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 22:50:09.348 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 22:50:17.313 | INFO     | services.order_service:create_order:29 - Order #7 created for customer 1
+2026-03-11 22:50:17.317 | ERROR    | agents.order_agent:order_agent:101 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 22:50:17.322 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 22:51:53.904 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 22:51:53.904 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 22:52:10.641 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 22:52:10.643 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 22:52:11.926 | INFO     | services.order_service:create_order:29 - Order #8 created for customer 1
+2026-03-11 22:52:11.928 | ERROR    | agents.order_agent:order_agent:101 - Order agent failed: 'generator' object has no attribute 'execute'
+2026-03-11 22:52:11.929 | WARNING  | graph:route_after_order:104 - Order node completed but no pending_order_id in state
+2026-03-11 22:55:09.691 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 22:58:04.082 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 22:58:04.268 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 22:58:13.880 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-11 22:58:13.881 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-11 22:58:30.384 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-11 22:58:30.386 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-11 22:58:43.299 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 22:58:43.301 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 22:59:08.320 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 22:59:08.322 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 22:59:08.932 | INFO     | services.order_service:create_order:29 - Order #9 created for customer 1
+2026-03-11 22:59:08.932 | ERROR    | services.notification_service:notify_customer:40 - notify_customer failed: Textual SQL expression 'SELECT phone, channel FRO...' should be explicitly declared as text('SELECT phone, channel FRO...')
+2026-03-11 22:59:09.369 | INFO     | graph:route_after_order:102 - Order #9 created — routing to payment
+2026-03-11 23:01:39.642 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-11 23:04:34.594 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-11 23:04:34.764 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-11 23:04:35.166 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 23:04:35.166 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 23:04:36.850 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-11 23:04:36.850 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-11 23:04:42.348 | INFO     | services.order_service:create_order:29 - Order #10 created for customer 1
+2026-03-11 23:04:42.488 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
+2026-03-11 23:04:42.793 | INFO     | graph:route_after_order:102 - Order #10 created — routing to payment
+2026-03-11 23:04:56.202 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 23:04:56.202 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 23:04:56.723 | INFO     | services.order_service:create_order:29 - Order #11 created for customer 1
+2026-03-11 23:04:56.751 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
+2026-03-11 23:04:57.064 | INFO     | graph:route_after_order:102 - Order #11 created — routing to payment
+2026-03-11 23:05:15.016 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:15.025 | INFO     | services.order_service:cancel_order:122 - Order #11 cancelled — stock restored for product 5
+2026-03-11 23:05:15.559 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:15.563 | INFO     | services.order_service:cancel_order:122 - Order #10 cancelled — stock restored for product 5
+2026-03-11 23:05:16.363 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:16.366 | INFO     | services.order_service:cancel_order:122 - Order #9 cancelled — stock restored for product 5
+2026-03-11 23:05:18.202 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:18.206 | INFO     | services.order_service:cancel_order:122 - Order #8 cancelled — stock restored for product 5
+2026-03-11 23:05:19.431 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:19.435 | INFO     | services.order_service:cancel_order:122 - Order #6 cancelled — stock restored for product 5
+2026-03-11 23:05:20.389 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:20.393 | INFO     | services.order_service:cancel_order:122 - Order #7 cancelled — stock restored for product 5
+2026-03-11 23:05:21.404 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:21.409 | INFO     | services.order_service:cancel_order:122 - Order #5 cancelled — stock restored for product 5
+2026-03-11 23:05:22.386 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 1
+2026-03-11 23:05:22.389 | INFO     | services.order_service:cancel_order:122 - Order #4 cancelled — stock restored for product 1
+2026-03-11 23:05:23.278 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 1
+2026-03-11 23:05:23.281 | INFO     | services.order_service:cancel_order:122 - Order #2 cancelled — stock restored for product 1
+2026-03-11 23:05:24.169 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:05:24.171 | INFO     | services.order_service:cancel_order:122 - Order #1 cancelled — stock restored for product 5
+2026-03-11 23:05:46.818 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 23:05:46.818 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 23:05:47.263 | INFO     | services.order_service:create_order:29 - Order #12 created for customer 1
+2026-03-11 23:05:47.284 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
+2026-03-11 23:05:48.228 | INFO     | graph:route_after_order:102 - Order #12 created — routing to payment
+2026-03-11 23:06:17.359 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:06:17.363 | INFO     | services.order_service:cancel_order:122 - Order #12 cancelled — stock restored for product 5
+2026-03-11 23:06:24.256 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 23:06:24.257 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 23:06:24.605 | INFO     | services.order_service:create_order:29 - Order #13 created for customer 1
+2026-03-11 23:06:24.609 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
+2026-03-11 23:06:24.962 | INFO     | graph:route_after_order:102 - Order #13 created — routing to payment
+2026-03-11 23:06:38.561 | INFO     | services.product_service:restore_stock:61 - Restored 1 units to product 5
+2026-03-11 23:06:38.582 | INFO     | services.order_service:cancel_order:122 - Order #13 cancelled — stock restored for product 5
+2026-03-11 23:06:47.083 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-11 23:06:47.084 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-11 23:06:47.503 | INFO     | services.order_service:create_order:29 - Order #14 created for customer 1
+2026-03-11 23:06:47.507 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
+2026-03-11 23:06:47.837 | INFO     | graph:route_after_order:102 - Order #14 created — routing to payment

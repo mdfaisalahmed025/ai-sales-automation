@@ -10,6 +10,7 @@ from database.db import test_connection
 from memory.conversation_memory import save_message
 from memory.customer_profile import get_or_create_customer
 from utils.logger import logger
+from automation.followup_scheduler import run_followups
 
 
 
@@ -70,7 +71,15 @@ async def chat(req: ChatRequest):
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=traceback.format_exc())
+@app.get("/orders/{customer_id}")
+async def get_customer_orders(customer_id: int):
+    from services.order_service import get_orders_by_customer
+    return get_orders_by_customer(customer_id)
 
+@app.post("/orders/{order_id}/cancel")
+async def cancel_customer_order(order_id: int):
+    from services.order_service import cancel_order
+    return cancel_order(order_id)
 
 @app.get("/health")
 async def health():
@@ -80,3 +89,8 @@ async def health():
 @app.get("/")
 async def root():
     return {"message": "AI Sales Agent is running. Visit /docs for API reference."}
+
+@app.post("/admin/trigger-followups")
+async def trigger_followups():
+    run_followups()
+    return {"status": "follow-up job triggered"}

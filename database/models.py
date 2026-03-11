@@ -34,19 +34,6 @@ class Product(Base):
     orders = relationship("Order", back_populates="product")
 
 
-class Order(Base):
-    __tablename__ = "orders"
-    id          = Column(Integer, primary_key=True, autoincrement=True)
-    customer_id = Column(Integer, ForeignKey("customers.id"))
-    product_id  = Column(Integer, ForeignKey("products.id"))
-    quantity    = Column(Integer, default=1)
-    total_price = Column(DECIMAL(10, 2))
-    status      = Column(Enum("pending", "confirmed", "shipped", "delivered", "cancelled"), default="pending")
-    created_at  = Column(DateTime, default=datetime.utcnow)
-
-    customer = relationship("Customer", back_populates="orders")
-    product  = relationship("Product", back_populates="orders")
-
 
 class Lead(Base):
     __tablename__ = "leads"
@@ -80,3 +67,38 @@ class Followup(Base):
     created_at   = Column(DateTime, default=datetime.utcnow)
 
     customer = relationship("Customer", back_populates="followups")
+
+
+class Order(Base):
+    __tablename__ = "orders"
+
+    id          = Column(Integer, primary_key=True, autoincrement=True)
+    customer_id = Column(Integer, ForeignKey("customers.id"))
+    product_id  = Column(Integer, ForeignKey("products.id"))
+    quantity    = Column(Integer, default=1)
+    total_price = Column(DECIMAL(10, 2))
+    status      = Column(
+                    Enum("pending", "awaiting_payment", "paid",
+                         "confirmed", "failed", "cancelled",
+                         "shipped", "delivered"),
+                    default="pending"
+                  )
+    payment_id  = Column(String(255), nullable=True)
+    payment_url = Column(String(500), nullable=True)
+    notified_at = Column(DateTime, nullable=True)
+    created_at  = Column(DateTime, default=datetime.utcnow)
+
+    customer = relationship("Customer", back_populates="orders")
+    product  = relationship("Product",  back_populates="orders")
+
+
+# Add Notification model at the bottom
+class Notification(Base):
+    __tablename__ = "notifications"
+
+    id          = Column(Integer, primary_key=True, autoincrement=True)
+    customer_id = Column(Integer, ForeignKey("customers.id"))
+    message     = Column(Text)
+    channel     = Column(Enum("web", "whatsapp", "instagram"), default="web")
+    is_read     = Column(Boolean, default=False)
+    created_at  = Column(DateTime, default=datetime.utcnow)

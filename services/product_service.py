@@ -49,3 +49,18 @@ def reduce_stock(product_id: int, quantity: int = 1) -> bool:
         return False
     finally:
         db.close()
+        
+def restore_stock(product_id: int, quantity: int):
+    """Add stock back when an order is cancelled."""
+    db = SessionLocal()
+    try:
+        product = db.query(Product).filter(Product.id == product_id).first()
+        if product:
+            product.stock += quantity
+            db.commit()
+            logger.info(f"Restored {quantity} units to product {product_id}")
+    except Exception as e:
+        logger.error(f"Failed to restore stock: {e}")
+        db.rollback()
+    finally:
+        db.close()

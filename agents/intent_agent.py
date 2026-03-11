@@ -1,8 +1,8 @@
 
 from langchain_groq import ChatGroq
-from langchain.messages import HumanMessage
 from config import GROQ_API_KEY, LLM_MODEL
 from utils.logger import logger
+from langchain_core.messages import HumanMessage, SystemMessage
 
 llm = ChatGroq(model=LLM_MODEL, api_key=GROQ_API_KEY, temperature=0)
 

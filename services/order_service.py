@@ -47,3 +47,95 @@ def get_orders_by_customer(customer_id: int) -> list[dict]:
         ]
     finally:
         db.close()
+
+
+def get_order(order_id: int) -> dict | None:
+    """Fetch a single order by ID. Returns dict or None if not found."""
+    db = SessionLocal()
+    try:
+        order = db.query(Order).filter(Order.id == order_id).first()
+        if not order:
+            logger.warning(f"Order #{order_id} not found")
+            return None
+        return {
+            "id": order.id,
+            "customer_id": order.customer_id,
+            "product_id": order.product_id,
+            "quantity": order.quantity,
+            "total_price": float(order.total_price),
+            "status": order.status,
+            "payment_id": getattr(order, "payment_id", None)
+        }
+    finally:
+        db.close()
+
+
+def update_order_status(order_id: int, status: str, payment_id: str = None) -> dict:
+    """Update order status. Optionally attach a payment_id on confirmation."""
+    db = SessionLocal()
+    try:
+        order = db.query(Order).filter(Order.id == order_id).first()
+        if not order:
+            return {"success": False, "message": f"Order #{order_id} not found"}
+
+        order.status = status
+        if payment_id:
+            order.payment_id = payment_id
+
+        db.commit()
+        logger.info(f"Order #{order_id} status updated to '{status}'")
+        return {"success": True, "order_id": order_id, "status": status}
+    except Exception as e:
+        logger.error(f"Failed to update order #{order_id}: {e}")
+        db.rollback()
+        return {"success": False, "message": str(e)}
+    finally:
+        db.close()
+
+
+def cancel_order(order_id: int) -> dict:
+    """
+    Cancel an order and restore stock.
+    Only cancels if order is in a cancellable state (pending/awaiting_payment).
+    """
+    db = SessionLocal()
+    try:
+        order = db.query(Order).filter(Order.id == order_id).first()
+        if not order:
+            return {"success": False, "message": f"Order #{order_id} not found"}
+
+        if order.status in ("confirmed", "shipped", "delivered"):
+            return {
+                "success": False,
+                "message": f"Order #{order_id} is already {order.status} and cannot be cancelled."
+            }
+
+        if order.status == "cancelled":
+            return {"success": False, "message": f"Order #{order_id} is already cancelled."}
+
+        # Restore stock before cancelling
+        from services.product_service import restore_stock
+        restore_stock(order.product_id, order.quantity)
+
+        order.status = "cancelled"
+        db.commit()
+        logger.info(f"Order #{order_id} cancelled — stock restored for product {order.product_id}")
+        return {"success": True, "order_id": order_id, "message": "Order cancelled and stock restored."}
+
+    except Exception as e:
+        logger.error(f"Failed to cancel order #{order_id}: {e}")
+        db.rollback()
+        return {"success": False, "message": str(e)}
+    finally:
+        db.close()
+
+
+def update_product_stock(product_id: int, quantity: int) -> dict:
+    """Explicitly decrement stock — use after payment confirmation."""
+    try:
+        reduce_stock(product_id, quantity)
+        logger.info(f"Stock updated for product {product_id} by -{quantity}")
+        return {"success": True}
+    except Exception as e:
+        logger.error(f"Stock update failed for product {product_id}: {e}")
+        return {"success": False, "message": str(e)}

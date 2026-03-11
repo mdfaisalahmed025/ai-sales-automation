@@ -1852,3 +1852,107 @@
 2026-03-09 00:26:43.686 | INFO     | graph:intent_node:22 - Intent detected: order
 2026-03-09 00:27:22.051 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
 2026-03-09 00:27:22.052 | INFO     | graph:intent_node:22 - Intent detected: recommendation
+2026-03-10 14:47:25.923 | INFO     | main:lifespan:17 - 🚀 Starting AI Sales Agent API...
+2026-03-10 14:47:25.995 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-10 14:48:07.081 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:48:07.082 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:48:13.583 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:48:13.586 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:48:17.789 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:48:17.789 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:48:21.715 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:48:21.715 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:50:28.539 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:50:28.541 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:50:35.783 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:50:35.784 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:50:50.241 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:50:50.243 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:50:55.941 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:50:55.941 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:51:02.873 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:51:02.874 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:51:09.626 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:51:09.626 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:51:13.911 | INFO     | api.webhook_router:whatsapp_webhook:28 - WhatsApp from +8801868984363: Hi, I want to buy a product
+2026-03-10 14:51:13.986 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-10 14:51:13.986 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:51:14.991 | ERROR    | api.whatsapp_api:send_whatsapp_message:19 - WhatsApp send failed: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC03bc033ecd4959a9440f26af5d33f596/Messages.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2026-03-10 14:53:17.092 | INFO     | main:lifespan:20 - 🛑 Shutting down.
+2026-03-10 14:53:33.011 | INFO     | main:lifespan:18 - 🚀 Starting AI Sales Agent API...
+2026-03-10 14:53:33.128 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-10 14:55:05.416 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 14:55:05.416 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:55:19.293 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-10 14:55:19.294 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-10 14:55:19.305 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-10 14:55:19.305 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-10 14:55:43.754 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-10 14:55:43.755 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-10 14:55:59.105 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 14:55:59.105 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 14:56:14.587 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 14:56:14.588 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:56:28.737 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-10 14:56:28.738 | INFO     | graph:intent_node:22 - Intent detected: recommendation
+2026-03-10 14:58:19.836 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 14:58:19.872 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 14:58:32.867 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-10 14:58:32.868 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-10 14:58:47.302 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 14:58:47.303 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 14:58:56.457 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-10 14:58:56.457 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-10 21:07:02.117 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-10 21:07:02.118 | INFO     | graph:intent_node:22 - Intent detected: recommendation
+2026-03-10 21:07:22.582 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-10 21:07:22.583 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-10 21:07:43.027 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 21:07:43.027 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 21:07:57.173 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 21:07:57.174 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 21:08:29.431 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'followup'
+2026-03-10 21:08:29.431 | INFO     | graph:intent_node:22 - Intent detected: followup
+2026-03-10 23:11:54.160 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 23:11:54.169 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 23:13:28.513 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 23:13:28.515 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 23:13:52.894 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-10 23:13:52.895 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-10 23:14:07.657 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-10 23:14:07.660 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-10 23:17:12.533 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 23:17:12.534 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 23:17:32.012 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 23:17:32.015 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 23:17:49.948 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 23:17:49.950 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 23:44:11.906 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 23:44:11.908 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 23:44:28.723 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 23:44:28.727 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 23:44:53.236 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-10 23:44:53.239 | INFO     | graph:intent_node:22 - Intent detected: product_inquiry
+2026-03-10 23:45:20.851 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-10 23:45:20.853 | INFO     | graph:intent_node:22 - Intent detected: pricing
+2026-03-10 23:45:48.902 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-10 23:45:48.908 | INFO     | graph:intent_node:22 - Intent detected: order
+2026-03-10 23:46:14.321 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'general'
+2026-03-10 23:46:14.323 | INFO     | graph:intent_node:22 - Intent detected: general
+2026-03-10 23:46:34.662 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'recommendation'
+2026-03-10 23:46:34.662 | INFO     | graph:intent_node:22 - Intent detected: recommendation
+2026-03-10 23:47:02.444 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'pricing'
+2026-03-10 23:47:02.447 | INFO     | graph:intent_node:22 - Intent detected: pricing

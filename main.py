@@ -12,6 +12,7 @@ from memory.customer_profile import get_or_create_customer
 from utils.logger import logger
 
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("🚀 Starting AI Sales Agent API...")

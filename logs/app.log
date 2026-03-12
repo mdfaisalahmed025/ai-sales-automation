@@ -2351,3 +2351,24 @@
 2026-03-11 23:06:47.503 | INFO     | services.order_service:create_order:29 - Order #14 created for customer 1
 2026-03-11 23:06:47.507 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
 2026-03-11 23:06:47.837 | INFO     | graph:route_after_order:102 - Order #14 created — routing to payment
+2026-03-12 15:19:50.948 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-12 15:19:51.046 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-12 15:25:12.972 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-12 15:25:23.828 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-12 15:25:23.897 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-12 15:25:54.898 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-12 15:25:54.898 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-12 15:26:09.433 | ERROR    | agents.intent_agent:detect_intent:49 - Intent detection failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-03-12 15:26:09.433 | INFO     | graph:intent_node:29 - Intent detected: general
+2026-03-12 15:30:19.743 | INFO     | main:lifespan:22 - 🛑 Shutting down.
+2026-03-12 15:30:31.548 | INFO     | main:lifespan:19 - 🚀 Starting AI Sales Agent API...
+2026-03-12 15:30:31.752 | INFO     | database.db:test_connection:23 - ✅ Database connected successfully.
+2026-03-12 15:32:39.156 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'product_inquiry'
+2026-03-12 15:32:39.157 | INFO     | graph:intent_node:29 - Intent detected: product_inquiry
+2026-03-12 15:32:39.163 | INFO     | vector_store.vector_search:_load_index:27 - ✅ FAISS index loaded.
+2026-03-12 15:32:39.163 | INFO     | vector_store.embeddings:get_embedding_model:11 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-12 15:34:29.423 | INFO     | agents.intent_agent:detect_intent:43 - Raw intent response: 'order'
+2026-03-12 15:34:29.426 | INFO     | graph:intent_node:29 - Intent detected: order
+2026-03-12 15:34:30.144 | INFO     | services.order_service:create_order:29 - Order #15 created for customer 1
+2026-03-12 15:34:30.174 | INFO     | services.notification_service:notify_customer:35 - Web notification stored for customer 1
+2026-03-12 15:34:30.640 | INFO     | graph:route_after_order:102 - Order #15 created — routing to payment
